@@ -12,8 +12,6 @@ class LaunchViewController: UIViewController {
 
     @IBOutlet weak var launchesTableView: UITableView!
 
-    private var lastCursor: LaunchListQuery.Data.Launch?
-
     var launches = [LaunchListQuery.Data.Launch.Launch]()
 
     override func viewDidLoad() {
@@ -79,7 +77,8 @@ extension LaunchViewController: UITableViewDataSource {
 
         let launch = self.launches[indexPath.row]
         cell.update(launchId: launch.id,
-                    launchSite: launch.site)
+                    launchSite: launch.site,
+                    spaceShip: launch.rocket?.name)
 
         return cell
     }

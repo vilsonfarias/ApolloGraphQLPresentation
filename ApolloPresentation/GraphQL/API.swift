@@ -17,6 +17,11 @@ public final class LaunchListQuery: GraphQLQuery {
           __typename
           id
           site
+          rocket {
+            __typename
+            id
+            name
+          }
         }
       }
     }
@@ -121,6 +126,7 @@ public final class LaunchListQuery: GraphQLQuery {
             GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
             GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
             GraphQLField("site", type: .scalar(String.self)),
+            GraphQLField("rocket", type: .object(Rocket.selections)),
           ]
         }
 
@@ -130,8 +136,8 @@ public final class LaunchListQuery: GraphQLQuery {
           self.resultMap = unsafeResultMap
         }
 
-        public init(id: GraphQLID, site: String? = nil) {
-          self.init(unsafeResultMap: ["__typename": "Launch", "id": id, "site": site])
+        public init(id: GraphQLID, site: String? = nil, rocket: Rocket? = nil) {
+          self.init(unsafeResultMap: ["__typename": "Launch", "id": id, "site": site, "rocket": rocket.flatMap { (value: Rocket) -> ResultMap in value.resultMap }])
         }
 
         public var __typename: String {
@@ -158,6 +164,64 @@ public final class LaunchListQuery: GraphQLQuery {
           }
           set {
             resultMap.updateValue(newValue, forKey: "site")
+          }
+        }
+
+        public var rocket: Rocket? {
+          get {
+            return (resultMap["rocket"] as? ResultMap).flatMap { Rocket(unsafeResultMap: $0) }
+          }
+          set {
+            resultMap.updateValue(newValue?.resultMap, forKey: "rocket")
+          }
+        }
+
+        public struct Rocket: GraphQLSelectionSet {
+          public static let possibleTypes: [String] = ["Rocket"]
+
+          public static var selections: [GraphQLSelection] {
+            return [
+              GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+              GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+              GraphQLField("name", type: .scalar(String.self)),
+            ]
+          }
+
+          public private(set) var resultMap: ResultMap
+
+          public init(unsafeResultMap: ResultMap) {
+            self.resultMap = unsafeResultMap
+          }
+
+          public init(id: GraphQLID, name: String? = nil) {
+            self.init(unsafeResultMap: ["__typename": "Rocket", "id": id, "name": name])
+          }
+
+          public var __typename: String {
+            get {
+              return resultMap["__typename"]! as! String
+            }
+            set {
+              resultMap.updateValue(newValue, forKey: "__typename")
+            }
+          }
+
+          public var id: GraphQLID {
+            get {
+              return resultMap["id"]! as! GraphQLID
+            }
+            set {
+              resultMap.updateValue(newValue, forKey: "id")
+            }
+          }
+
+          public var name: String? {
+            get {
+              return resultMap["name"] as? String
+            }
+            set {
+              resultMap.updateValue(newValue, forKey: "name")
+            }
           }
         }
       }
