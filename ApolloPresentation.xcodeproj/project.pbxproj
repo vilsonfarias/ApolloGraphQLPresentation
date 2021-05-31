@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF61DB592620F4AB005F99FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61DB582620F4AB005F99FC /* AppDelegate.swift */; };
+		AF61DB5B2620F4AB005F99FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61DB5A2620F4AB005F99FC /* SceneDelegate.swift */; };
+		AF61DB5D2620F4AB005F99FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61DB5C2620F4AB005F99FC /* ViewController.swift */; };
+		AF61DB602620F4AB005F99FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF61DB5E2620F4AB005F99FC /* Main.storyboard */; };
+		AF61DB622620F4AF005F99FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF61DB612620F4AF005F99FC /* Assets.xcassets */; };
+		AF61DB652620F4AF005F99FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF61DB632620F4AF005F99FC /* LaunchScreen.storyboard */; };
+		AF61DB702620F4AF005F99FC /* ApolloPresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61DB6F2620F4AF005F99FC /* ApolloPresentationTests.swift */; };
+		AF61DB7B2620F4AF005F99FC /* ApolloPresentationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61DB7A2620F4AF005F99FC /* ApolloPresentationUITests.swift */; };
+		AF61DB8D2620F7A7005F99FC /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = AF61DB8C2620F7A7005F99FC /* Apollo */; };
+		AF61DB8F2620F7A7005F99FC /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = AF61DB8E2620F7A7005F99FC /* ApolloWebSocket */; };
+		AF61DBBB2621547B005F99FC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61DBBA2621547B005F99FC /* API.swift */; };
+		AF61DBE32621CC9D005F99FC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61DBE22621CC9D005F99FC /* Network.swift */; };
+		AF61DDAD262223D0005F99FC /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61DDAC262223D0005F99FC /* LaunchTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF61DB6C2620F4AF005F99FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF61DB4D2620F4AB005F99FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF61DB542620F4AB005F99FC;
+			remoteInfo = ApolloPresentation;
+		};
+		AF61DB772620F4AF005F99FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF61DB4D2620F4AB005F99FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF61DB542620F4AB005F99FC;
+			remoteInfo = ApolloPresentation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF61DB552620F4AB005F99FC /* ApolloPresentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApolloPresentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF61DB582620F4AB005F99FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF61DB5A2620F4AB005F99FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AF61DB5C2620F4AB005F99FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF61DB5F2620F4AB005F99FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF61DB612620F4AF005F99FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF61DB642620F4AF005F99FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF61DB662620F4AF005F99FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF61DB6B2620F4AF005F99FC /* ApolloPresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApolloPresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF61DB6F2620F4AF005F99FC /* ApolloPresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloPresentationTests.swift; sourceTree = "<group>"; };
+		AF61DB712620F4AF005F99FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF61DB762620F4AF005F99FC /* ApolloPresentationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApolloPresentationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF61DB7A2620F4AF005F99FC /* ApolloPresentationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloPresentationUITests.swift; sourceTree = "<group>"; };
+		AF61DB7C2620F4AF005F99FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF61DB9A2620FA9B005F99FC /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = ApolloPresentation/GraphQL/schema.json; sourceTree = SOURCE_ROOT; };
+		AF61DBA62621538A005F99FC /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
+		AF61DBBA2621547B005F99FC /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		AF61DBE22621CC9D005F99FC /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		AF61DDAC262223D0005F99FC /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF61DB522620F4AB005F99FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF61DB8D2620F7A7005F99FC /* Apollo in Frameworks */,
+				AF61DB8F2620F7A7005F99FC /* ApolloWebSocket in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF61DB682620F4AF005F99FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF61DB732620F4AF005F99FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF61DB4C2620F4AB005F99FC = {
+			isa = PBXGroup;
+			children = (
+				AF61DB572620F4AB005F99FC /* ApolloPresentation */,
+				AF61DB6E2620F4AF005F99FC /* ApolloPresentationTests */,
+				AF61DB792620F4AF005F99FC /* ApolloPresentationUITests */,
+				AF61DB562620F4AB005F99FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF61DB562620F4AB005F99FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF61DB552620F4AB005F99FC /* ApolloPresentation.app */,
+				AF61DB6B2620F4AF005F99FC /* ApolloPresentationTests.xctest */,
+				AF61DB762620F4AF005F99FC /* ApolloPresentationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF61DB572620F4AB005F99FC /* ApolloPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				AF61DB662620F4AF005F99FC /* Info.plist */,
+				AF61DBE12621CBC1005F99FC /* Service */,
+				AF61DBA526215373005F99FC /* GraphQL */,
+				AF61DD9D2621E329005F99FC /* Support */,
+				AF61DDA726222167005F99FC /* ViewController */,
+			);
+			path = ApolloPresentation;
+			sourceTree = "<group>";
+		};
+		AF61DB6E2620F4AF005F99FC /* ApolloPresentationTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF61DB6F2620F4AF005F99FC /* ApolloPresentationTests.swift */,
+				AF61DB712620F4AF005F99FC /* Info.plist */,
+			);
+			path = ApolloPresentationTests;
+			sourceTree = "<group>";
+		};
+		AF61DB792620F4AF005F99FC /* ApolloPresentationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF61DB7A2620F4AF005F99FC /* ApolloPresentationUITests.swift */,
+				AF61DB7C2620F4AF005F99FC /* Info.plist */,
+			);
+			path = ApolloPresentationUITests;
+			sourceTree = "<group>";
+		};
+		AF61DBA526215373005F99FC /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				AF61DBBA2621547B005F99FC /* API.swift */,
+				AF61DB9A2620FA9B005F99FC /* schema.json */,
+				AF61DBA62621538A005F99FC /* LaunchList.graphql */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		AF61DBE12621CBC1005F99FC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AF61DBE22621CC9D005F99FC /* Network.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AF61DD9D2621E329005F99FC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				AF61DB582620F4AB005F99FC /* AppDelegate.swift */,
+				AF61DB5A2620F4AB005F99FC /* SceneDelegate.swift */,
+				AF61DB612620F4AF005F99FC /* Assets.xcassets */,
+				AF61DB632620F4AF005F99FC /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		AF61DDA726222167005F99FC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF61DDAB262223BD005F99FC /* TableView */,
+				AF61DB5C2620F4AB005F99FC /* ViewController.swift */,
+				AF61DB5E2620F4AB005F99FC /* Main.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AF61DDAB262223BD005F99FC /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				AF61DDAC262223D0005F99FC /* LaunchTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF61DB542620F4AB005F99FC /* ApolloPresentation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF61DB7F2620F4AF005F99FC /* Build configuration list for PBXNativeTarget "ApolloPresentation" */;
+			buildPhases = (
+				AF61DB932620F82F005F99FC /* Apollo CLI */,
+				AF61DB512620F4AB005F99FC /* Sources */,
+				AF61DB522620F4AB005F99FC /* Frameworks */,
+				AF61DB532620F4AB005F99FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApolloPresentation;
+			packageProductDependencies = (
+				AF61DB8C2620F7A7005F99FC /* Apollo */,
+				AF61DB8E2620F7A7005F99FC /* ApolloWebSocket */,
+			);
+			productName = ApolloPresentation;
+			productReference = AF61DB552620F4AB005F99FC /* ApolloPresentation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF61DB6A2620F4AF005F99FC /* ApolloPresentationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF61DB822620F4AF005F99FC /* Build configuration list for PBXNativeTarget "ApolloPresentationTests" */;
+			buildPhases = (
+				AF61DB672620F4AF005F99FC /* Sources */,
+				AF61DB682620F4AF005F99FC /* Frameworks */,
+				AF61DB692620F4AF005F99FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF61DB6D2620F4AF005F99FC /* PBXTargetDependency */,
+			);
+			name = ApolloPresentationTests;
+			productName = ApolloPresentationTests;
+			productReference = AF61DB6B2620F4AF005F99FC /* ApolloPresentationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF61DB752620F4AF005F99FC /* ApolloPresentationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF61DB852620F4AF005F99FC /* Build configuration list for PBXNativeTarget "ApolloPresentationUITests" */;
+			buildPhases = (
+				AF61DB722620F4AF005F99FC /* Sources */,
+				AF61DB732620F4AF005F99FC /* Frameworks */,
+				AF61DB742620F4AF005F99FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF61DB782620F4AF005F99FC /* PBXTargetDependency */,
+			);
+			name = ApolloPresentationUITests;
+			productName = ApolloPresentationUITests;
+			productReference = AF61DB762620F4AF005F99FC /* ApolloPresentationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF61DB4D2620F4AB005F99FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					AF61DB542620F4AB005F99FC = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					AF61DB6A2620F4AF005F99FC = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = AF61DB542620F4AB005F99FC;
+					};
+					AF61DB752620F4AF005F99FC = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = AF61DB542620F4AB005F99FC;
+					};
+				};
+			};
+			buildConfigurationList = AF61DB502620F4AB005F99FC /* Build configuration list for PBXProject "ApolloPresentation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF61DB4C2620F4AB005F99FC;
+			packageReferences = (
+				AF61DB8B2620F7A7005F99FC /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = AF61DB562620F4AB005F99FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF61DB542620F4AB005F99FC /* ApolloPresentation */,
+				AF61DB6A2620F4AF005F99FC /* ApolloPresentationTests */,
+				AF61DB752620F4AF005F99FC /* ApolloPresentationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF61DB532620F4AB005F99FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF61DB652620F4AF005F99FC /* LaunchScreen.storyboard in Resources */,
+				AF61DB622620F4AF005F99FC /* Assets.xcassets in Resources */,
+				AF61DB602620F4AB005F99FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF61DB692620F4AF005F99FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF61DB742620F4AF005F99FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF61DB932620F82F005F99FC /* Apollo CLI */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Apollo CLI";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"GraphQL/schema.json\" \"GraphQL/API.swift\"\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://apollo-fullstack-tutorial.herokuapp.com/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF61DB512620F4AB005F99FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF61DBE32621CC9D005F99FC /* Network.swift in Sources */,
+				AF61DB5D2620F4AB005F99FC /* ViewController.swift in Sources */,
+				AF61DB592620F4AB005F99FC /* AppDelegate.swift in Sources */,
+				AF61DBBB2621547B005F99FC /* API.swift in Sources */,
+				AF61DDAD262223D0005F99FC /* LaunchTableViewCell.swift in Sources */,
+				AF61DB5B2620F4AB005F99FC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF61DB672620F4AF005F99FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF61DB702620F4AF005F99FC /* ApolloPresentationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF61DB722620F4AF005F99FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF61DB7B2620F4AF005F99FC /* ApolloPresentationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF61DB6D2620F4AF005F99FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF61DB542620F4AB005F99FC /* ApolloPresentation */;
+			targetProxy = AF61DB6C2620F4AF005F99FC /* PBXContainerItemProxy */;
+		};
+		AF61DB782620F4AF005F99FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF61DB542620F4AB005F99FC /* ApolloPresentation */;
+			targetProxy = AF61DB772620F4AF005F99FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF61DB5E2620F4AB005F99FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF61DB5F2620F4AB005F99FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF61DB632620F4AF005F99FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF61DB642620F4AF005F99FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF61DB7D2620F4AF005F99FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF61DB7E2620F4AF005F99FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF61DB802620F4AF005F99FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXZ5VF8836;
+				INFOPLIST_FILE = ApolloPresentation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.oneapp.beta.ApolloPresentation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF61DB812620F4AF005F99FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXZ5VF8836;
+				INFOPLIST_FILE = ApolloPresentation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.oneapp.beta.ApolloPresentation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF61DB832620F4AF005F99FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXZ5VF8836;
+				INFOPLIST_FILE = ApolloPresentationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.oneapp.beta.ApolloPresentationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApolloPresentation.app/ApolloPresentation";
+			};
+			name = Debug;
+		};
+		AF61DB842620F4AF005F99FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXZ5VF8836;
+				INFOPLIST_FILE = ApolloPresentationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.oneapp.beta.ApolloPresentationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApolloPresentation.app/ApolloPresentation";
+			};
+			name = Release;
+		};
+		AF61DB862620F4AF005F99FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXZ5VF8836;
+				INFOPLIST_FILE = ApolloPresentationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.oneapp.beta.ApolloPresentationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ApolloPresentation;
+			};
+			name = Debug;
+		};
+		AF61DB872620F4AF005F99FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXZ5VF8836;
+				INFOPLIST_FILE = ApolloPresentationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.oneapp.beta.ApolloPresentationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ApolloPresentation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF61DB502620F4AB005F99FC /* Build configuration list for PBXProject "ApolloPresentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF61DB7D2620F4AF005F99FC /* Debug */,
+				AF61DB7E2620F4AF005F99FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF61DB7F2620F4AF005F99FC /* Build configuration list for PBXNativeTarget "ApolloPresentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF61DB802620F4AF005F99FC /* Debug */,
+				AF61DB812620F4AF005F99FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF61DB822620F4AF005F99FC /* Build configuration list for PBXNativeTarget "ApolloPresentationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF61DB832620F4AF005F99FC /* Debug */,
+				AF61DB842620F4AF005F99FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF61DB852620F4AF005F99FC /* Build configuration list for PBXNativeTarget "ApolloPresentationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF61DB862620F4AF005F99FC /* Debug */,
+				AF61DB872620F4AF005F99FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF61DB8B2620F7A7005F99FC /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.42.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF61DB8C2620F7A7005F99FC /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF61DB8B2620F7A7005F99FC /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		AF61DB8E2620F7A7005F99FC /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF61DB8B2620F7A7005F99FC /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AF61DB4D2620F4AB005F99FC /* Project object */;
+}
